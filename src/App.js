@@ -6,12 +6,26 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
+import Layout from "antd";
+
 
 function App() {
 	return (
+
 		<div className="App">
-			
 			<div>
+				<div className="navbar">
+					<div className="toggleButton">
+						<button></button>
+					</div>
+					<div className="links">
+					
+							<Link to="/">Home</Link>
+							<Link to="/about">About</Link>
+							<Link to="/portfolio">Portfolio</Link>
+							<Link to="/contact">Contact</Link>
+					</div>
+				</div>
 				<nav>
 					<ul>
 						<li>
