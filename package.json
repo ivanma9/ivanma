@@ -64,6 +64,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "legacy-start": "react-scripts --openssl-legacy-provider start",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -141,5 +143,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
