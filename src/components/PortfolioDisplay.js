@@ -10,7 +10,7 @@ export default function PortfolioDisplay() {
 	return (
 		<div className="project">
 			<h1> {project.name} </h1>
-			<img src={project.image} alt="Project image not shown" />
+			<img src={project.image} alt="Project not shown" />
 			<p>
 				<b>Skills</b> {project.skills}
 			</p>
