@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ivanma/static/css/main.fd7ab5da.css",
+    "main.js": "/ivanma/static/js/main.3894324f.js",
+    "static/media/Proj1.1.png": "/ivanma/static/media/Proj1.1.5aa0142aa9ac5f90420c.png",
+    "static/media/Proj1.2.png": "/ivanma/static/media/Proj1.2.4958e1e9f77f5dcb9a5b.png",
+    "static/media/Proj3.png": "/ivanma/static/media/Proj3.f83905eb074c146ac6da.png",
+    "static/media/Proj4.png": "/ivanma/static/media/Proj4.a106be4ca4160332bd21.png",
+    "index.html": "/ivanma/index.html",
+    "main.fd7ab5da.css.map": "/ivanma/static/css/main.fd7ab5da.css.map",
+    "main.3894324f.js.map": "/ivanma/static/js/main.3894324f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd7ab5da.css",
+    "static/js/main.3894324f.js"
+  ]
+}
