@@ -66,6 +66,24 @@
   font-size: 35px;
 }
 
+.experienceItem {
+    width:30%;
+}
+.experienceItem img{
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+/* .imageCropper {
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 50%; */
+/* } */
+
 @media only screen and (max-width: 600px) {
   .about h2 {
     font-size: 40px;
