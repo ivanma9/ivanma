@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/ivanma/static/css/main.7bcf1eaa.css",
-    "main.js": "/ivanma/static/js/main.53e69680.js",
+    "main.js": "/ivanma/static/js/main.54e49e82.js",
     "static/media/Proj1.1.png": "/ivanma/static/media/Proj1.1.5aa0142aa9ac5f90420c.png",
-    "static/media/Proj1.2.png": "/ivanma/static/media/Proj1.2.4958e1e9f77f5dcb9a5b.png",
+    "static/media/Proj2.png": "/ivanma/static/media/Proj2.f52714f189756cea5905.png",
     "static/media/Proj3.png": "/ivanma/static/media/Proj3.f83905eb074c146ac6da.png",
     "static/media/Proj4.png": "/ivanma/static/media/Proj4.a106be4ca4160332bd21.png",
     "static/media/roku_logo.jpeg": "/ivanma/static/media/roku_logo.90571397aeff24573c0a.jpeg",
     "static/media/amazon_logo.png": "/ivanma/static/media/amazon_logo.d82c01816b81b7dffb81.png",
     "index.html": "/ivanma/index.html",
     "main.7bcf1eaa.css.map": "/ivanma/static/css/main.7bcf1eaa.css.map",
-    "main.53e69680.js.map": "/ivanma/static/js/main.53e69680.js.map"
+    "main.54e49e82.js.map": "/ivanma/static/js/main.54e49e82.js.map"
   },
   "entrypoints": [
     "static/css/main.7bcf1eaa.css",
-    "static/js/main.53e69680.js"
+    "static/js/main.54e49e82.js"
   ]
 }
