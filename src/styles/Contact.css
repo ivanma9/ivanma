@@ -1,0 +1,35 @@
+.contact {
+    padding: 5% 20%;
+}
+
+.contactItem {
+    position: relative;
+    display: flex;
+}
+
+.contactItem svg {
+  margin: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.contactItem div {
+    text-align: center;
+    font-size: large;
+    padding: 10% 5%;
+}
+
+@media only screen and (max-width: 800px) {
+    .contactItem div{
+        padding: 10% 0%;
+        font-size: medium;
+    }
+    .contact {
+        padding: 5% 5%;
+    }
+    .contactItem svg {
+        padding: 5px;
+        align-items: center;
+    }
+}

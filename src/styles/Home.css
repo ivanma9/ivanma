@@ -104,4 +104,12 @@
   .skills h2 {
     font-size: 30px;
   }
+  .experienceItem {
+      height: 30%;
+      display: inline;
+  }
+  .experienceItem img {
+    width: 80%;
+    height: auto;
+  }
 }
