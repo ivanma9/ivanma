@@ -1,5 +1,5 @@
 import Proj1a from "../assets/Proj1.1.png";
-import Proj1b from "../assets/Proj1.2.png";
+import Proj2 from "../assets/Proj2.png";
 import Proj3 from "../assets/Proj3.png";
 import Proj4 from "../assets/Proj4.png";
 
@@ -12,7 +12,7 @@ export const ProjectList = [
 	},
 	{
 		name: "Curiocity",
-		image: Proj1b,
+		image: Proj2,
 		skills: "Javascript, MongoDB, Node.js, Heroku, Express",
 	},
 	{
