@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./components/Home.tsx";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
@@ -27,10 +27,10 @@ function App() {
 	}, [location]);
 
 	return (
-		<div className="App">
+		<div style={{ margin: 0 }}>
 			<Layout>
 				<Header>header</Header>
-				<Layout>
+				<Layout style={{ margin: 0 }}>
 					<Content>
 						<div>
 							<div className="navbar" id={expandNavbar ? "open" : "close"}>
