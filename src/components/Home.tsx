@@ -2,33 +2,74 @@ import React, { useRef } from "react";
 import "../styles/Home.css";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import img1 from "../assets/UCLA_GRAD_chill.jpg";
-const section_data = [img1];
+import img2 from "../assets/Step.svg";
+import { HomeSection, SectionType } from "../helpers/util";
+
+const section_data: HomeSection[] = [
+	{
+		content: img1,
+		type: "Image",
+		caption: "UCLA B.S. in Computer Science",
+	},
+	{
+		content: img2,
+		type: "Image",
+		caption: "Gen AI Startup",
+	},
+];
 
 const useParallax = (value: MotionValue<number>, distance: number) =>
 	useTransform(value, [0, 1], [-distance, distance]);
 
-const Section = ({ id }: { id: String }) => {
+const Section = ({ section }: { section: HomeSection }) => {
 	const ref = useRef(null);
 	const { scrollYProgress } = useScroll({ target: ref });
 	const y = useParallax(scrollYProgress, 300);
 
 	return (
-		<section>
+		<section
+			style={{
+				margin: 250,
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "center",
+				justifyContent: "center",
+			}}
+		>
 			<div ref={ref}>
-				<img width={100} src={`${id}`} alt="Item" />
+				<img width={600} src={`${section.content}`} alt="Item" />
 			</div>
-			<motion.h2 style={{ y }}>{`#00${id}`}</motion.h2>
+			<motion.h2
+				style={{
+					y,
+					color: "white",
+					backgroundColor: "#2A2A2A",
+					width: 1900,
+					height: 100,
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "right",
+					padding: 50,
+					opacity: 0.6,
+				}}
+			>{`${section.caption}`}</motion.h2>
 		</section>
 	);
 };
 
 const Home = () => {
 	return (
-		<>
-			{section_data.map((image) => (
-				<Section id={image} />
+		<div
+			style={{
+				flexDirection: "column",
+				alignItems: "center",
+				justifyContent: "center",
+			}}
+		>
+			{section_data.map((sec) => (
+				<Section section={sec} />
 			))}
-		</>
+		</div>
 	);
 };
 
