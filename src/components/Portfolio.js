@@ -5,8 +5,8 @@ import "../styles/Project.css";
 
 const Portfolio = () => {
 	return (
-		<section>
-			<h1>Portfolio</h1>
+		<section className="projects">
+			<h1 className="projectTitle">Portfolio</h1>
 			<div className="projectList">
 				{ProjectList.map((project, idx) => {
 					return (

@@ -24,19 +24,20 @@ const useParallax = (value: MotionValue<number>, distance: number) =>
 const Section = ({ section }: { section: HomeSection }) => {
 	const ref = useRef(null);
 	const { scrollYProgress } = useScroll({ target: ref });
-	const y = useParallax(scrollYProgress, 300);
+	const y = useParallax(scrollYProgress, 350);
 
 	return (
 		<section
 			style={{
-				margin: 250,
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "center",
 				justifyContent: "center",
 			}}
 		>
-			<div ref={ref}>
+			<div ref={ref} style={{
+				margin: 100
+			}}>
 				<img width={600} src={`${section.content}`} alt="Item" />
 			</div>
 			<motion.h2
@@ -64,6 +65,7 @@ const Home = () => {
 				flexDirection: "column",
 				alignItems: "center",
 				justifyContent: "center",
+				backgroundColor: "#DDD0C8"
 			}}
 		>
 			{section_data.map((sec) => (
