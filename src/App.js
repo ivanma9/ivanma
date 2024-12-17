@@ -61,7 +61,7 @@ function App() {
 						</div>
 					</Content>
 				</Layout>
-				<Footer>
+				<Footer className="footerBkgd">
 					<div className="footer">
 						<div className="socialMedia">
 							<Link to="https://www.linkedin.com/in/ivan-ma9/">
