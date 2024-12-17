@@ -3,7 +3,7 @@ import "../styles/Home.css";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import img1 from "../assets/UCLA_GRAD_chill.jpg";
 import img2 from "../assets/Step.svg";
-import python from "../assets/Python.svg";
+import pythonlogo from "../assets/python.png";
 import jslogo from "../assets/JavaScript-logo.png";
 import { HomeSection, SectionType } from "../helpers/util";
 
@@ -24,9 +24,9 @@ const section_data: HomeSection[] = [
 		caption: "Technical Skills",
 	},
 	// {
-	// 	content: jslogo,
+	// 	content: pythonlogo,
 	// 	type: "Image",
-	// 	caption: "Javascript",
+	// 	caption: "Python",
 	// },
 ];
 
@@ -57,7 +57,7 @@ const Section = ({ section }: { section: HomeSection }) => {
 					y,
 					color: "white",
 					backgroundColor: "#2A2A2A",
-					width: 1900,
+					width: "100%",
 					height: 100,
 					display: "flex",
 					alignItems: "center",
@@ -80,6 +80,13 @@ const Home = () => {
 				backgroundColor: "#DDD0C8"
 			}}
 		>
+			<div className="about">
+				<h2> Ivan Ma</h2>
+				<p className="prompt">
+					A software engineer with a passion for creating alongside practical
+					solutions
+				</p>
+			</div>
 			{section_data.map((sec) => (
 				<Section section={sec} />
 			))}

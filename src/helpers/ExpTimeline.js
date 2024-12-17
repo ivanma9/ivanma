@@ -3,9 +3,17 @@ import AmazonLogo from "../assets/amazon_logo.png";
 import RokuLogo from "../assets/roku_logo.jpeg";
 import MagikidLogo from "../assets/magikid_logo.jpeg";
 import ExperienceItem from "../components/ExperienceItem";
+import StepLogo from "../assets/Step.svg";
 
 const ExpTimeline = () => {
 	const experienceList = [
+		{
+			label: "November 2023 - June 2024",
+			image: StepLogo,
+			company: "Step",
+			role: "Co-Founder",
+			description: "Self Development AI app",
+		},
 		{
 			label: "June 2022 - September 2022",
 			image: AmazonLogo,

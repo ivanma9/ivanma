@@ -7,7 +7,7 @@
 
 .about {
   width: 100%;
-  height: calc(100vh - 10px);
+  height: calc(80vh - 10px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,13 +18,9 @@
 }
 
 .about h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 80px;
-  color: #fbd457;
-  text-shadow: 4px 4px 0 rgb(150, 121, 52),
-    -2px 2px 0 rgb(95, 76, 33),
-    -2px -2px 0 rgb(95, 76, 33),
-    3px -3px 0 rgb(95, 76, 33);
+  color: #ffffff;
 }
 
 .about .prompt {
