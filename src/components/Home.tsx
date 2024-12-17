@@ -3,6 +3,8 @@ import "../styles/Home.css";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import img1 from "../assets/UCLA_GRAD_chill.jpg";
 import img2 from "../assets/Step.svg";
+import python from "../assets/Python.svg";
+import jslogo from "../assets/JavaScript-logo.png";
 import { HomeSection, SectionType } from "../helpers/util";
 
 const section_data: HomeSection[] = [
@@ -16,6 +18,16 @@ const section_data: HomeSection[] = [
 		type: "Image",
 		caption: "Gen AI Startup",
 	},
+	{
+		content: jslogo,
+		type: "Image",
+		caption: "Technical Skills",
+	},
+	// {
+	// 	content: jslogo,
+	// 	type: "Image",
+	// 	caption: "Javascript",
+	// },
 ];
 
 const useParallax = (value: MotionValue<number>, distance: number) =>
