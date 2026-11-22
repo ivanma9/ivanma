@@ -58,15 +58,6 @@ const Role = ({ x, i, open, onToggle }) => (
 // "AWS (Lambda, S3)" stays one term: split on commas that aren't inside parentheses
 const terms = (s) => s.split(/,\s*(?![^()]*\))/);
 
-// Soft spotlight that follows the pointer across a project row
-const spotlight = (e) => {
-  const row = e.target.closest(".project");
-  if (!row) return;
-  const r = row.getBoundingClientRect();
-  row.style.setProperty("--mx", `${e.clientX - r.left}px`);
-  row.style.setProperty("--my", `${e.clientY - r.top}px`);
-};
-
 function useScrollEffects(setActive) {
   useEffect(() => {
     const reveal = new IntersectionObserver(
@@ -126,6 +117,7 @@ export default function App() {
 
       <main id="main">
         <section className="hero">
+          <div className="rings" aria-hidden="true" />
           <h1>
             I build AI tools that read{" "}
             <Mark to="freight" tag="Freight portal" i={0}>freight invoices</Mark>,{" "}
@@ -146,11 +138,11 @@ export default function App() {
 
         <section id="work" className="section" aria-labelledby="work-h">
           <h2 id="work-h" data-reveal>Selected work</h2>
-          <ul className="projects" onPointerMove={spotlight}>
+          <ul className="projects">
             {projects.map((p) => (
               <li key={p.id} id={p.id} className="project" data-reveal>
                 <div className="project-head">
-                  <h3><span className="hl">{p.name}</span></h3>
+                  <h3>{p.name}</h3>
                   <p className="tagline">{p.tagline}</p>
                 </div>
                 <div className="project-body">
@@ -172,7 +164,7 @@ export default function App() {
           <ul className="more-list">
             {more.map((p) => (
               <li key={p.name} data-reveal>
-                <h3><span className="hl">{p.name}</span></h3>
+                <h3><span className="glyph" aria-hidden="true">✦</span>{p.name}</h3>
                 <div>
                   <p>{p.body}</p>
                   <p className="stack">{p.stack}</p>
@@ -192,7 +184,7 @@ export default function App() {
                   <img src={p.image} alt={p.alt} loading="lazy" />
                 </div>
                 <figcaption>
-                  <h3><span className="hl">{p.name}</span></h3>
+                  <h3>{p.name}</h3>
                   <p>{p.body}</p>
                   <p className="stack">{p.stack}</p>
                   {p.code && <Ext href={p.code}>Read the code</Ext>}
@@ -238,11 +230,8 @@ export default function App() {
                 <div key={k}>
                   <dt>{k}</dt>
                   <dd>
-                    {terms(v).map((t, i) => (
-                      <span key={t}>
-                        {i > 0 && ", "}
-                        <span className="term">{t}</span>
-                      </span>
+                    {terms(v).map((t) => (
+                      <span key={t} className="term">{t}</span>
                     ))}
                   </dd>
                 </div>
