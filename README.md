@@ -1,4 +1,11 @@
-# Ivan Ma
+# Ivan Ma — portfolio
 
-This is my website! Learn a little bit about me and some of the projects I have done.
-There are various projects in the portfolio tab. Alongside, there are some of my previous experiences and also some background about the technical side of me.
+Personal portfolio site built with Vite + React.
+
+```
+npm install
+npm run dev
+npm run deploy
+```
+
+`npm run deploy` publishes `dist/` to the `gh-pages` branch, served at https://ivanma9.github.io/ivanma/.
