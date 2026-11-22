@@ -58,14 +58,11 @@ const Role = ({ x, i, open, onToggle }) => (
 // "AWS (Lambda, S3)" stays one term: split on commas that aren't inside parentheses
 const terms = (s) => s.split(/,\s*(?![^()]*\))/);
 
-// Soft spotlight that follows the pointer across a project row
-const spotlight = (e) => {
-  const row = e.target.closest(".project");
-  if (!row) return;
-  const r = row.getBoundingClientRect();
-  row.style.setProperty("--mx", `${e.clientX - r.left}px`);
-  row.style.setProperty("--my", `${e.clientY - r.top}px`);
-};
+const Chips = ({ children }) => (
+  <p className="stack">
+    {children.split(", ").map((t) => <span key={t} className="chip">{t}</span>)}
+  </p>
+);
 
 function useScrollEffects(setActive) {
   useEffect(() => {
@@ -96,6 +93,12 @@ function useScrollEffects(setActive) {
     };
   }, [setActive]);
 }
+
+const stats = [
+  ["Roles", experience.length],
+  ["Projects", projects.length + more.length + earlier.length],
+  ["Languages spoken", 4], // from the About copy
+];
 
 export default function App() {
   const [active, setActive] = useState(null);
@@ -146,16 +149,16 @@ export default function App() {
 
         <section id="work" className="section" aria-labelledby="work-h">
           <h2 id="work-h" data-reveal>Selected work</h2>
-          <ul className="projects" onPointerMove={spotlight}>
+          <ul className="projects">
             {projects.map((p) => (
               <li key={p.id} id={p.id} className="project" data-reveal>
                 <div className="project-head">
-                  <h3><span className="hl">{p.name}</span></h3>
+                  <h3>{p.name}</h3>
                   <p className="tagline">{p.tagline}</p>
                 </div>
                 <div className="project-body">
                   <p>{p.body}</p>
-                  <p className="stack">{p.stack}</p>
+                  <Chips>{p.stack}</Chips>
                   {(p.live || p.code || p.extra) && (
                     <p className="project-links">
                       {p.live && <Ext href={p.live}>Open live demo</Ext>}
@@ -169,20 +172,34 @@ export default function App() {
           </ul>
 
           <h2 className="sub" data-reveal>More projects</h2>
-          <ul className="more-list">
-            {more.map((p) => (
-              <li key={p.name} data-reveal>
-                <h3><span className="hl">{p.name}</span></h3>
-                <div>
-                  <p>{p.body}</p>
-                  <p className="stack">{p.stack}</p>
-                </div>
-                <p className="project-links">
-                  {p.links.map((l) => <Ext key={l.href} href={l.href}>{l.label}</Ext>)}
-                </p>
-              </li>
-            ))}
-          </ul>
+          <div className="table-wrap" data-reveal>
+            <table className="league" role="table">
+              <caption className="sr-only">More projects</caption>
+              <thead role="rowgroup">
+                <tr role="row">
+                  <th scope="col" role="columnheader">#</th>
+                  <th scope="col" role="columnheader">Project</th>
+                  <th scope="col" role="columnheader">Built with</th>
+                  <th scope="col" role="columnheader">Links</th>
+                </tr>
+              </thead>
+              <tbody role="rowgroup">
+                {more.map((p, i) => (
+                  <tr key={p.name} role="row">
+                    <td className="rank" role="cell">{i + 1}</td>
+                    <th scope="row" role="rowheader" className="proj">
+                      <strong>{p.name}</strong>
+                      <span>{p.body}</span>
+                    </th>
+                    <td role="cell"><Chips>{p.stack}</Chips></td>
+                    <td className="project-links" role="cell">
+                      {p.links.map((l) => <Ext key={l.href} href={l.href}>{l.label}</Ext>)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
           <h2 className="sub" data-reveal>Earlier, at UCLA</h2>
           <div className="earlier">
@@ -192,9 +209,9 @@ export default function App() {
                   <img src={p.image} alt={p.alt} loading="lazy" />
                 </div>
                 <figcaption>
-                  <h3><span className="hl">{p.name}</span></h3>
+                  <h3>{p.name}</h3>
                   <p>{p.body}</p>
-                  <p className="stack">{p.stack}</p>
+                  <Chips>{p.stack}</Chips>
                   {p.code && <Ext href={p.code}>Read the code</Ext>}
                 </figcaption>
               </figure>
@@ -213,13 +230,24 @@ export default function App() {
         </section>
 
         <section id="about" className="section about" aria-labelledby="about-h">
-          <img
-            className="portrait"
-            src={portrait}
-            alt="Ivan at his UCLA graduation, smiling in a blue and gold stole."
-            loading="lazy"
-            data-reveal
-          />
+          <div className="player" data-reveal>
+            <div className="player-photo">
+              <img
+                src={portrait}
+                alt="Ivan at his UCLA graduation, smiling in a blue and gold stole."
+                loading="lazy"
+              />
+            </div>
+            <p className="player-name">Ivan Ma</p>
+            <dl className="stats">
+              {stats.map(([label, n]) => (
+                <div key={label}>
+                  <dt>{label}</dt>
+                  <dd>{n}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
           <div>
             <h2 id="about-h" data-reveal>About</h2>
             <p className="prose">
@@ -238,12 +266,7 @@ export default function App() {
                 <div key={k}>
                   <dt>{k}</dt>
                   <dd>
-                    {terms(v).map((t, i) => (
-                      <span key={t}>
-                        {i > 0 && ", "}
-                        <span className="term">{t}</span>
-                      </span>
-                    ))}
+                    {terms(v).map((t) => <span key={t} className="chip">{t}</span>)}
                   </dd>
                 </div>
               ))}
@@ -257,13 +280,13 @@ export default function App() {
         </section>
       </main>
 
-      <footer className="foot">
+      <div className="foot-wrap"><footer className="foot">
         <span>© {new Date().getFullYear()} Ivan Ma</span>
         <span className="foot-links">
           <Ext href={links.github}>GitHub</Ext>
           <Ext href={links.linkedin}>LinkedIn</Ext>
         </span>
-      </footer>
+      </footer></div>
     </>
   );
 }
