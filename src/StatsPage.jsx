@@ -45,7 +45,7 @@ function buildBoard(cat, year) {
       .filter((r) => r.commits > 0 && (year === "all" || r.year === Number(year)))
       .slice(0, 10)
       .map((r) => ({
-        key: r.name, url: r.url, who: display(r), val: r.commits, text: nf.format(r.commits),
+        key: r.name, url: r.url, lang: r.language ?? "none", who: display(r), val: r.commits, text: nf.format(r.commits),
         sub: `${r.language ?? "No language"} · ${r.year}` + (r.contributors > 1 ? ` · team repo, ${r.contributors} contributors` : ""),
       }));
     return {
@@ -59,7 +59,7 @@ function buildBoard(cat, year) {
     const rows = Object.entries(languages).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([l, bytes]) => {
       const n = repos.filter((r) => r.language === l).length;
       const pct = (bytes / total) * 100;
-      return { key: l, who: l, val: Number(pct.toFixed(1)), text: `${pct.toFixed(1)}%`, sub: `main language of ${n} ${n === 1 ? "repo" : "repos"}` };
+      return { key: l, lang: l, who: l, val: Number(pct.toFixed(1)), text: `${pct.toFixed(1)}%`, sub: `main language of ${n} ${n === 1 ? "repo" : "repos"}` };
     });
     return {
       rows, col: ["Language", "Share of code"], caption: "Top languages by share of code size",
@@ -169,7 +169,7 @@ function Leaderboard() {
           </thead>
           <tbody>
             {rows.map((r, i) => (
-              <tr key={r.key} className={i === 0 ? "leader" : undefined}>
+              <tr key={r.key} data-lang={r.lang} className={i === 0 ? "leader" : undefined}>
                 <td className="rank">{r.rank}</td>
                 <th scope="row" className="who">
                   {r.url ? <a href={r.url}>{r.who}</a> : r.who}
@@ -248,13 +248,13 @@ export default function StatsPage() {
         </section>
       </main>
 
-      <footer className="foot">
+      <div className="foot-wrap"><footer className="foot">
         <span>© {new Date().getFullYear()} Ivan Ma</span>
         <span className="foot-links">
           <Ext href={links.github}>GitHub</Ext>
           <Ext href={links.linkedin}>LinkedIn</Ext>
         </span>
-      </footer>
+      </footer></div>
     </>
   );
 }

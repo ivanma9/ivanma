@@ -546,7 +546,7 @@ main > section,
   .league .proj { max-width: none; }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   :root { --bar-h: 92px; }
   .bar-in { flex-direction: column; gap: 10px; }
 }
