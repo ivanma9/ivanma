@@ -183,3 +183,7 @@ main > .leaders {
   .board-tab, .board .bar { transition: none; }
   .impact h2::before, .quality h2::before { transform: scaleX(1); }
 }
+
+@media (forced-colors: active) {
+  .board-tab[aria-selected="true"] { border: 2px solid Highlight; text-decoration: underline; }
+}

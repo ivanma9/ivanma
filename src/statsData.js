@@ -1,4 +1,4 @@
-// Friendly names for repos that appear on the home page
+// Friendly display names for repos
 export const repoNames = {
   "ghostfolio-agent": "AgentForge", "collab_space": "CollabBoard", "NASTRAN-search": "LegacyLens",
   "TTB_reader": "Alcohol label verifier", "zania-qa": "Document Q&A API",
@@ -16,9 +16,9 @@ export const impact = [
   { org: "Headstarter AI", role: "Builder", when: "2024 – 2025", stats: [
     ["20%", "monthly user growth (BadgerAI)"] ] },
   { org: "Amazon", role: "SDE Intern", when: "2021 – 2022", stats: [
-    ["25%", "fewer onboarding tickets"], ["350+", "users of the testing tool"], ["5x", "throughput"] ] },
+    ["25%", "fewer onboarding tickets"], ["350+", "users covered"], ["5x", "throughput"] ] },
   { org: "Roku", role: "Software Engineer Intern", when: "2021", stats: [
-    ["50M+", "ad data segments"], ["300+", "data sources"], ["70%", "match rate"] ] },
+    ["50M+", "ad data segments"], ["300+", "data sources"], ["70%", "peak match rate"] ] },
 ];
 // From each project's README
 export const quality = [
