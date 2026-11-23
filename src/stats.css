@@ -225,3 +225,7 @@
   .stats-hero h1::before { scale: 1; }
   .stats-hero h1::after { clip-path: inset(0); }
 }
+
+@media (forced-colors: active) {
+  .board-tab[aria-selected="true"] { border: 2px solid Highlight; text-decoration: underline; }
+}
