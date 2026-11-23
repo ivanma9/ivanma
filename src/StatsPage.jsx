@@ -132,7 +132,7 @@ function Leaderboard() {
   const top = rows[0]?.val || 1;
 
   return (
-    <section className="leaders" id="leaders" aria-labelledby="leaders-h">
+    <section className="section leaders" id="leaders" aria-labelledby="leaders-h">
       <h2 id="leaders-h" data-reveal>Leaderboards</h2>
       <div className="board-controls">
         <div className="board-tabs" role="tablist" aria-label="Leaderboard">
@@ -158,6 +158,7 @@ function Leaderboard() {
         )}
       </div>
       <div id="board-panel" role="tabpanel" aria-labelledby={`tab-${cat}`}>
+        <div className="board-card">
         <table className="board">
           <caption className="sr-only">{board.caption}</caption>
           <thead>
@@ -170,7 +171,7 @@ function Leaderboard() {
           <tbody>
             {rows.map((r, i) => (
               <tr key={r.key} className={i === 0 ? "leader" : undefined}>
-                <td className="rank">{r.rank}</td>
+                <td className="rank"><span className="badge">{r.rank}</span></td>
                 <th scope="row" className="who">
                   {r.url ? <a href={r.url}>{r.who}</a> : r.who}
                   <span className="sub">{r.sub}</span>
@@ -183,6 +184,7 @@ function Leaderboard() {
             ))}
           </tbody>
         </table>
+        </div>
         <p className="board-note">{board.note}</p>
       </div>
     </section>
@@ -209,7 +211,7 @@ export default function StatsPage() {
 
       <main id="main">
         <section className="stats-hero">
-          <h1>Stats</h1>
+          <h1 data-reveal>Stats</h1>
           <p className="stats-asof">
             Public GitHub repos as of {asOf}. Career numbers are from my resume; project numbers are from each repo's README.
           </p>
@@ -223,8 +225,9 @@ export default function StatsPage() {
 
         <Leaderboard />
 
-        <section className="impact" aria-labelledby="impact-h">
+        <section className="section impact" aria-labelledby="impact-h">
           <h2 id="impact-h" data-reveal>Career impact</h2>
+          <div className="impact-grid">
           {impact.map((g) => (
             <article key={g.org} className="impact-group" data-reveal>
               <h3>{g.org}</h3>
@@ -232,9 +235,10 @@ export default function StatsPage() {
               <Tiles items={g.stats} />
             </article>
           ))}
+          </div>
         </section>
 
-        <section className="quality" aria-labelledby="quality-h">
+        <section className="section quality" aria-labelledby="quality-h">
           <h2 id="quality-h" data-reveal>Project quality</h2>
           <ul className="stat-tiles quality-tiles">
             {quality.map((q) => (

@@ -589,12 +589,16 @@ main > section,
   .section h2 { letter-spacing: .12em; }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   :root { --bar-h: 92px; }
   .bar-in { flex-direction: column; gap: 10px; }
-  .bar nav { justify-content: center; gap: 8px 20px; }
+  .bar nav { justify-content: center; gap: 8px 14px; }
   .bar nav a { font-size: .75rem; letter-spacing: .14em; }
   .bar nav a::before { left: -12px; }
+}
+
+@media (max-width: 400px) {
+  .bar nav a { letter-spacing: .1em; }
 }
 
 @media print {

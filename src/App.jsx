@@ -111,6 +111,7 @@ export default function App() {
                 {label}
               </a>
             ))}
+            <a href="./stats.html">Stats</a>
           </nav>
         </div>
       </header>
