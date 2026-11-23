@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d dist --nojekyll"
+    "deploy": "gh-pages -b gh-pages -d dist --nojekyll",
+    "stats": "node scripts/stats.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
