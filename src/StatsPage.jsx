@@ -113,16 +113,18 @@ function Leaderboard() {
     if (window.location.hash !== h) history.replaceState(null, "", h);
   }, [cat, year]);
   useEffect(() => {
-    const onHash = () => setState(readHash());
+    const onHash = () => {
+      if (tabs.some(([id]) => id === window.location.hash.slice(1).split("/")[0])) setState(readHash());
+    };
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
   const onKey = (e, i) => {
     const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
-    if (!d) return;
+    if (!d && e.key !== "Home" && e.key !== "End") return;
     e.preventDefault();
-    const j = (i + d + tabs.length) % tabs.length;
+    const j = e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : (i + d + tabs.length) % tabs.length;
     setState((s) => ({ ...s, cat: tabs[j][0] }));
     tabRefs.current[j]?.focus();
   };
@@ -157,7 +159,7 @@ function Leaderboard() {
           </label>
         )}
       </div>
-      <div id="board-panel" role="tabpanel" aria-labelledby={`tab-${cat}`}>
+      <div id="board-panel" role="tabpanel" tabIndex={0} aria-labelledby={`tab-${cat}`}>
         <table className="board">
           <caption className="sr-only">{board.caption}</caption>
           <thead>
@@ -211,11 +213,11 @@ export default function StatsPage() {
         <section className="stats-hero">
           <h1>Stats</h1>
           <p className="stats-asof">
-            Public GitHub repos as of {asOf}. Career numbers are from my resume; project numbers are from each repo's README.
+            Public GitHub repos as of {asOf}. Career numbers are from my resume; project numbers are from each repo's README or GitHub.
           </p>
           <Tiles items={[
             [nf.format(commits), "commits"],
-            [nf.format(stats.repos.length), "public repos"],
+            [nf.format(stats.repos.length), "original public repos"],
             [nf.format(stats.repos.filter((r) => r.year === latest).length), `repos started in ${latest}`],
             [nf.format(experience.length), "roles"],
           ]} />

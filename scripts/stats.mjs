@@ -25,16 +25,17 @@ const parseArrays = (out) => {
 };
 
 const list = JSON.parse(
-  gh("repo", "list", USER, "--limit", "200", "--source", "--visibility", "public",
+  gh("repo", "list", USER, "--limit", "1000", "--source", "--visibility", "public",
     "--json", "name,description,primaryLanguage,stargazerCount,createdAt,pushedAt,homepageUrl")
 );
 
 const languages = {};
-const repos = list.map((r) => {
-  const contribs = parseArrays(gh("api", `repos/${USER}/${r.name}/contributors?per_page=100`, "--paginate"));
+const repos = list.flatMap((r) => {
+  try {
+  const contribs = parseArrays(gh("api", `repos/${USER}/${r.name}/contributors?per_page=100&anon=1`, "--paginate"));
   const langs = JSON.parse(gh("api", `repos/${USER}/${r.name}/languages`) || "{}");
   for (const [l, b] of Object.entries(langs)) languages[l] = (languages[l] ?? 0) + b;
-  return {
+  return [{
     name: r.name,
     description: r.description || "",
     language: r.primaryLanguage?.name ?? null,
@@ -43,7 +44,11 @@ const repos = list.map((r) => {
     commits: contribs.find((c) => c.login === USER)?.contributions ?? 0,
     contributors: contribs.length,
     url: `https://github.com/${USER}/${r.name}`,
-  };
+  }];
+  } catch (e) {
+    console.warn(`stats: skipping ${r.name}: ${e.message.split("\n")[0]}`);
+    return [];
+  }
 });
 repos.sort((a, b) => b.commits - a.commits);
 

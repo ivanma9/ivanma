@@ -69,3 +69,7 @@
 @media (prefers-reduced-motion: reduce) {
   .board-tab, .board .bar { transition: none; }
 }
+
+@media (forced-colors: active) {
+  .board-tab[aria-selected="true"] { border: 2px solid Highlight; text-decoration: underline; }
+}
