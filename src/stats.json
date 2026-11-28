@@ -1,0 +1,691 @@
+{
+  "generatedAt": "2026-11-23T20:26:12.422Z",
+  "user": "ivanma9",
+  "repos": [
+    {
+      "name": "ghostfolio-agent",
+      "description": "AI-powered financial assistant for Ghostfolio - LangGraph agent with portfolio analysis tools",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 171,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/ghostfolio-agent"
+    },
+    {
+      "name": "ship",
+      "description": "",
+      "language": "TypeScript",
+      "year": 2026,
+      "stars": 0,
+      "commits": 164,
+      "contributors": 15,
+      "url": "https://github.com/ivanma9/ship"
+    },
+    {
+      "name": "rev-agent",
+      "description": "Autonomous AI agent applying for RevenueCat's Agentic AI & Growth Advocate role",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 149,
+      "contributors": 2,
+      "url": "https://github.com/ivanma9/rev-agent"
+    },
+    {
+      "name": "collab_space",
+      "description": "",
+      "language": "TypeScript",
+      "year": 2026,
+      "stars": 0,
+      "commits": 118,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/collab_space"
+    },
+    {
+      "name": "phostro",
+      "description": "",
+      "language": "TypeScript",
+      "year": 2026,
+      "stars": 0,
+      "commits": 110,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/phostro"
+    },
+    {
+      "name": "neetcode-submissions",
+      "description": "My NeetCode.io problem submissions",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 102,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/neetcode-submissions"
+    },
+    {
+      "name": "HappyTweet",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2021,
+      "stars": 0,
+      "commits": 88,
+      "contributors": 4,
+      "url": "https://github.com/ivanma9/HappyTweet"
+    },
+    {
+      "name": "tiktok-faceless",
+      "description": "",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 65,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/tiktok-faceless"
+    },
+    {
+      "name": "NASTRAN-search",
+      "description": "RAG-powered system for understanding NASA NASTRAN-95 legacy FORTRAN codebase",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 60,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/NASTRAN-search"
+    },
+    {
+      "name": "ChatBridge",
+      "description": "",
+      "language": "TypeScript",
+      "year": 2026,
+      "stars": 0,
+      "commits": 59,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/ChatBridge"
+    },
+    {
+      "name": "cs133",
+      "description": "",
+      "language": "C++",
+      "year": 2022,
+      "stars": 0,
+      "commits": 58,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/cs133"
+    },
+    {
+      "name": "footprints-in-the-snow",
+      "description": "A web game that teaches least common multiple to grades 4-5: a rabbit and a fox hop along a snowy number trail. Live: https://footprints-in-the-snow.vercel.app",
+      "language": "TypeScript",
+      "year": 2026,
+      "stars": 0,
+      "commits": 57,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/footprints-in-the-snow"
+    },
+    {
+      "name": "curiocity",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2022,
+      "stars": 3,
+      "commits": 52,
+      "contributors": 4,
+      "url": "https://github.com/ivanma9/curiocity"
+    },
+    {
+      "name": "ivanma",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2023,
+      "stars": 0,
+      "commits": 51,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/ivanma"
+    },
+    {
+      "name": "TTB_reader",
+      "description": "Alcohol label compliance verifier — OCR-backed reviewer workbench for distilled spirits",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 50,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/TTB_reader"
+    },
+    {
+      "name": "MealPlanana",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2021,
+      "stars": 1,
+      "commits": 48,
+      "contributors": 5,
+      "url": "https://github.com/ivanma9/MealPlanana"
+    },
+    {
+      "name": "ai_coach",
+      "description": "",
+      "language": "TypeScript",
+      "year": 2023,
+      "stars": 0,
+      "commits": 35,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/ai_coach"
+    },
+    {
+      "name": "chatstarter",
+      "description": "Discord Clone",
+      "language": "TypeScript",
+      "year": 2024,
+      "stars": 1,
+      "commits": 34,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/chatstarter"
+    },
+    {
+      "name": "DH151",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2021,
+      "stars": 0,
+      "commits": 33,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/DH151"
+    },
+    {
+      "name": "dashboard-agent",
+      "description": "test repo to test out user management and an AWS agent on dashboard.",
+      "language": "TypeScript",
+      "year": 2025,
+      "stars": 0,
+      "commits": 25,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/dashboard-agent"
+    },
+    {
+      "name": "zania-qa",
+      "description": "Document question-answering API over PDF and JSON with FastAPI, LangChain, FAISS and gpt-4o-mini",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 22,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/zania-qa"
+    },
+    {
+      "name": "CongressionalTrading",
+      "description": "REST API + dashboard for U.S. House financial disclosure data. Scrapes, parses, and serves congressional stock trades.",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 18,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/CongressionalTrading"
+    },
+    {
+      "name": "outlook-email-drafter",
+      "description": "A modern email drafting tool for Outlook with Quick Send (mailto) and Advanced Mode (OAuth + attachments)",
+      "language": "TypeScript",
+      "year": 2026,
+      "stars": 1,
+      "commits": 17,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/outlook-email-drafter"
+    },
+    {
+      "name": "chicago-arts-and-culture-app",
+      "description": "Browse public domain artworks from the Art Institute of Chicago",
+      "language": "HTML",
+      "year": 2026,
+      "stars": 0,
+      "commits": 11,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/chicago-arts-and-culture-app"
+    },
+    {
+      "name": "NintendoBloom",
+      "description": "blooooooooooooooooooom",
+      "language": "HTML",
+      "year": 2020,
+      "stars": 1,
+      "commits": 11,
+      "contributors": 2,
+      "url": "https://github.com/ivanma9/NintendoBloom"
+    },
+    {
+      "name": "ML-churn-predictions",
+      "description": "",
+      "language": "Python",
+      "year": 2024,
+      "stars": 0,
+      "commits": 10,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/ML-churn-predictions"
+    },
+    {
+      "name": "wayback-greenboard",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2025,
+      "stars": 0,
+      "commits": 9,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/wayback-greenboard"
+    },
+    {
+      "name": "market-firehouse",
+      "description": "",
+      "language": "HTML",
+      "year": 2024,
+      "stars": 1,
+      "commits": 9,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/market-firehouse"
+    },
+    {
+      "name": "Brain-Tumor-Classification",
+      "description": "",
+      "language": "Python",
+      "year": 2024,
+      "stars": 0,
+      "commits": 8,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/Brain-Tumor-Classification"
+    },
+    {
+      "name": "transfer-HaCK",
+      "description": "",
+      "language": "C++",
+      "year": 2020,
+      "stars": 0,
+      "commits": 7,
+      "contributors": 3,
+      "url": "https://github.com/ivanma9/transfer-HaCK"
+    },
+    {
+      "name": "code-pilot",
+      "description": "This is an ai code editor similar to Cursor, PearAI, and Github copilot that uses judge0 as the code editor in browser.",
+      "language": "Python",
+      "year": 2025,
+      "stars": 0,
+      "commits": 6,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/code-pilot"
+    },
+    {
+      "name": "med-school-tracker",
+      "description": "App that gives statistics for incoming med school students using past data",
+      "language": "JavaScript",
+      "year": 2021,
+      "stars": 1,
+      "commits": 6,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/med-school-tracker"
+    },
+    {
+      "name": "spotify",
+      "description": "",
+      "language": "HTML",
+      "year": 2026,
+      "stars": 0,
+      "commits": 5,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/spotify"
+    },
+    {
+      "name": "reel-up",
+      "description": "Clone of tiktok frontend",
+      "language": "TypeScript",
+      "year": 2025,
+      "stars": 1,
+      "commits": 5,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/reel-up"
+    },
+    {
+      "name": "dental-scheduler",
+      "description": "",
+      "language": "Python",
+      "year": 2025,
+      "stars": 0,
+      "commits": 5,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/dental-scheduler"
+    },
+    {
+      "name": "market-anomaly-detection",
+      "description": "",
+      "language": "Jupyter Notebook",
+      "year": 2025,
+      "stars": 0,
+      "commits": 5,
+      "contributors": 2,
+      "url": "https://github.com/ivanma9/market-anomaly-detection"
+    },
+    {
+      "name": "aperium-hack",
+      "description": "",
+      "language": "Python",
+      "year": 2026,
+      "stars": 0,
+      "commits": 4,
+      "contributors": 4,
+      "url": "https://github.com/ivanma9/aperium-hack"
+    },
+    {
+      "name": "genie",
+      "description": "",
+      "language": "Python",
+      "year": 2020,
+      "stars": 0,
+      "commits": 4,
+      "contributors": 2,
+      "url": "https://github.com/ivanma9/genie"
+    },
+    {
+      "name": "CS1D-College-Touring-Project",
+      "description": "CS1D College Touring Project",
+      "language": "Makefile",
+      "year": 2020,
+      "stars": 0,
+      "commits": 4,
+      "contributors": 4,
+      "url": "https://github.com/ivanma9/CS1D-College-Touring-Project"
+    },
+    {
+      "name": "qbeatai",
+      "description": "This project is a voice AI agent designed to replace the host or takeout station at restaurants. It makes ordering easier and faster, especially for fast casual spots and high-volume takeout operations.",
+      "language": "JavaScript",
+      "year": 2025,
+      "stars": 0,
+      "commits": 3,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/qbeatai"
+    },
+    {
+      "name": "rag-chat",
+      "description": "",
+      "language": null,
+      "year": 2026,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/rag-chat"
+    },
+    {
+      "name": "doveai-site",
+      "description": "",
+      "language": "HTML",
+      "year": 2026,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/doveai-site"
+    },
+    {
+      "name": "atc-speech-recognition",
+      "description": "air traffic controller speech ",
+      "language": "Python",
+      "year": 2026,
+      "stars": 1,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/atc-speech-recognition"
+    },
+    {
+      "name": "badgerai",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2025,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/badgerai"
+    },
+    {
+      "name": "autotab",
+      "description": "This is a chrome extension that enables any webpage to use ai code complete.",
+      "language": "JavaScript",
+      "year": 2025,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/autotab"
+    },
+    {
+      "name": "llm-eval",
+      "description": "",
+      "language": "TypeScript",
+      "year": 2025,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/llm-eval"
+    },
+    {
+      "name": "image-generator",
+      "description": "Generates images with Modal and stable diffusion",
+      "language": "Python",
+      "year": 2024,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/image-generator"
+    },
+    {
+      "name": "instashop",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2024,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/instashop"
+    },
+    {
+      "name": "nextjs",
+      "description": "",
+      "language": "JavaScript",
+      "year": 2023,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/nextjs"
+    },
+    {
+      "name": "git-another-test",
+      "description": "",
+      "language": "Python",
+      "year": 2020,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/git-another-test"
+    },
+    {
+      "name": "war-card-game-app",
+      "description": "",
+      "language": "Swift",
+      "year": 2020,
+      "stars": 0,
+      "commits": 2,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/war-card-game-app"
+    },
+    {
+      "name": "weather-app",
+      "description": "Public weather app — shows current conditions and 5-day forecast via Open-Meteo API",
+      "language": "HTML",
+      "year": 2026,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/weather-app"
+    },
+    {
+      "name": "chess-app",
+      "description": "Chess app with AI opponent for ChatBridge",
+      "language": "HTML",
+      "year": 2026,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/chess-app"
+    },
+    {
+      "name": "second-brain-voice",
+      "description": "Voice-driven AI assistant that organizes voice notes into Notion via MCP — multi-intent routing from a single voice note",
+      "language": "Shell",
+      "year": 2026,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/second-brain-voice"
+    },
+    {
+      "name": "muso",
+      "description": "Music app",
+      "language": null,
+      "year": 2025,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/muso"
+    },
+    {
+      "name": "strands-social-media-agent",
+      "description": "This is to create social media posts and orchestration using AWS Strands agents.",
+      "language": null,
+      "year": 2025,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/strands-social-media-agent"
+    },
+    {
+      "name": "nextjs-ai-rag-backend",
+      "description": "",
+      "language": null,
+      "year": 2024,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/nextjs-ai-rag-backend"
+    },
+    {
+      "name": "flutter_xylophone",
+      "description": "",
+      "language": "Ruby",
+      "year": 2021,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 4,
+      "url": "https://github.com/ivanma9/flutter_xylophone"
+    },
+    {
+      "name": "flutter_mi_card",
+      "description": "",
+      "language": "Objective-C",
+      "year": 2021,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 2,
+      "url": "https://github.com/ivanma9/flutter_mi_card"
+    },
+    {
+      "name": "flutter_i_am_rich",
+      "description": "",
+      "language": "Dart",
+      "year": 2021,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/flutter_i_am_rich"
+    },
+    {
+      "name": "flutter_dice",
+      "description": "",
+      "language": "Dart",
+      "year": 2021,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 4,
+      "url": "https://github.com/ivanma9/flutter_dice"
+    },
+    {
+      "name": "flutter_8ball",
+      "description": "",
+      "language": "Dart",
+      "year": 2021,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 3,
+      "url": "https://github.com/ivanma9/flutter_8ball"
+    },
+    {
+      "name": "transfer_bridge_hack_hw",
+      "description": "Homework form hackathon workshops. Arduino, Python,  solidworks",
+      "language": null,
+      "year": 2020,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/transfer_bridge_hack_hw"
+    },
+    {
+      "name": "CSMajors-CS1D-project2",
+      "description": "",
+      "language": "C++",
+      "year": 2020,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 2,
+      "url": "https://github.com/ivanma9/CSMajors-CS1D-project2"
+    },
+    {
+      "name": "hello-world",
+      "description": "",
+      "language": null,
+      "year": 2020,
+      "stars": 0,
+      "commits": 1,
+      "contributors": 1,
+      "url": "https://github.com/ivanma9/hello-world"
+    },
+    {
+      "name": "CS1C---Hi-Chew",
+      "description": "",
+      "language": null,
+      "year": 2020,
+      "stars": 0,
+      "commits": 0,
+      "contributors": 0,
+      "url": "https://github.com/ivanma9/CS1C---Hi-Chew"
+    }
+  ],
+  "languages": {
+    "Python": 2883706,
+    "HTML": 817711,
+    "CSS": 116669,
+    "Shell": 231430,
+    "TypeScript": 6287906,
+    "JavaScript": 766290,
+    "Dockerfile": 12311,
+    "Makefile": 494804,
+    "Mako": 635,
+    "HCL": 131828,
+    "PLpgSQL": 48125,
+    "Jupyter Notebook": 1027172,
+    "Procfile": 14,
+    "C++": 1007155,
+    "NASL": 668,
+    "C": 49491,
+    "Ruby": 1354,
+    "Objective-C": 289772,
+    "Dart": 6895,
+    "Swift": 5665,
+    "Java": 1535,
+    "Kotlin": 125,
+    "QMake": 3899
+  }
+}
